@@ -2,18 +2,22 @@
 
 {%block article%}
 
-<h2>Título do Article</h2>
+<h2>Artigos Recentes</h2>
+<div class="article-grid">
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
+    {%for article in page.articles%}
+
+    <div class="article-box" onclick="location">
+        <img src="" alt="">
+        <h4></h4>
+        <small></small>
+    </div>
+    {%endfor%}
 
 {%end block%}
-
+</div>
 
 {%block aside%}
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui aut rerum, ut aspernatur tempore, optio molestias expedita dolorum veniam asperiores exercitationem architecto veritatis maxime error sit dicta? Facilis, earum.</p>
+
 
 {%end block%}
